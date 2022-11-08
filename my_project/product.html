@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Карточка товара</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/gallery.js"></script>
+        <script defer src="js/lightbox.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <section class="container">
+                <div class="cont1">
+                    <a class="logo"></a>
+                    <div id="city" class="gorod" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+                    <p>
+                        <a href="#" class="phon">495-000-00-00</a>
+                    </p>
+                </div>
+            </section>
+            <section class="container">
+                <div class="cont2">
+                    
+                    <input class="poisk" type="text" placeholder="Поиск по сайту">
+                    <button class="iskat" type="submit">найти</button>
+                    <a class="user"></a>
+                    <a class="basket"></a>
+                </div>
+            </section>
+            <section class="container">
+                <div class="cont3">
+                    <nav class="topmenu">
+                        <a href="index.html"><span>Главная страница</span></a>
+                        <a href="catalog.html"><span>Каталог</span></a>
+                        <a href="product.html"><span>Товар</span></a>
+                        <a href="order.html"><span>Корзина</span></a>
+                        <a href="contacts.html"><span>Контакты</span></a>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        
+        <main>
+            <section class="container">
+                <div class="bread">
+                    <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="index.html">
+                                <span itemprop="name">Главная страница</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                            <link itemprop="url" href="index.html">
+                        </li>
+                        
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="catalog.html">
+                                <span itemprop="name">Каталог</span>
+                            </a>
+                            <meta itemprop="position" content="2">
+                            <link itemprop="url" href="catalog.html">
+                        </li>
+                        
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <span itemprop="name">Товар</span>
+                            <meta itemprop="position" content="3">
+                            <link itemprop="url" href="product.html">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="product" data-product-id="12345" itemscope itemtype="https://schema.org/Product">
+                    <div class="images">
+                        <div class="bigimage">
+                            <img src="images/tpoco.jpg" alt="Poco M5" itemprop="image">
+                        </div>
+                        
+                        <div class="gallery">
+                            <div>
+                                <div class="rail">
+                                    <img src="images/mini_tpoco.jpg" alt="Poco M5" itemprop="image">
+                                    <img src="images/mini_tpoco1.jpg" alt="Poco M5a" itemprop="image">
+                                    <img src="images/mini_tpoco2.jpg" alt="Poco M5b" itemprop="image">
+                                    <img src="images/mini_tpoco3.jpg" alt="Poco M5c" itemprop="image">
+                                    <img src="images/mini_tpoco4.jpg" alt="Poco M5d" itemprop="image">
+                                    <img src="images/mini_tpoco5.jpg" alt="Poco M5e" itemprop="image">
+                                    <img src="images/mini_tpoco6.jpg" alt="Poco M5f" itemprop="image">
+                                    <img src="images/mini_tpoco7.jpg" alt="Poco M5g" itemprop="image">
+                                    <img src="images/mini_tpoco8.jpg" alt="Poco M5h" itemprop="image">
+                                    <img src="images/mini_tpoco9.jpg" alt="Poco M5i" itemprop="image">
+                                    <img src="images/mini_tpoco10.jpg" alt="Poco M5j" itemprop="image">
+                                    
+                                </div>
+                            </div>
+                            <button type="button" class="gal_left disabled"><span>&#8249;</span></button>
+                            <button type="button" class="gal_right"><span>&#8250;</span></button>
+                        </div>
+                    </div>
+                    
+                    <div class="offer">
+                        <h1 itemprop="name">Смартфон Xiaomi Poco M5</h1>
+                        <p class="reiting">Рейтинг:</p>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">14990</span>
+                            <meta itemprop="priceCurrency" content="RUB">
+                        </p>
+                        <button type="button" class="btn btn-danger btn-buy">КУПИТЬ</button>
+                        <p class="darim">
+                            <a href="#" class="podarki">Подарок при покупке: кожаный чехол-книжка</a>
+                        </p>
+                        <h3 class="haract"><u>Характеристики:</u></h3>
+                        <h4>Цвет:</h4>
+                        <p class="zelen"></p>
+                        <h4>Процессор:</h4>
+                        <p itemprop="description">MediaTek Helio G99 Техпроцесс — 6 нмЦП: восьмиядерный с тактовой частотой
+                        до 2,2 ГГц.</p>
+                        <h4>Память и ОЗУ:</h4>
+                        <p>4 ГБ+64 ГБ, 4 ГБ+128 ГБ. Поддержка расширяемой памяти до 1 ТБ.
+                        </p>
+                        <h4>Дисплей:</h4>
+                        <p>Дисплей FHD+ DotDrop с диагональю 6,58". Разрешение: 
+                        2408 x 1080 FHD+. Соотношение сторон: 20:9. Частота обновления: 30/60/90 Гц.
+                        я</p>
+                        <h4>Камера:</h4>
+                        <p>Три камеры, разрешение до 50 Мп. Основная камера, 50 Мп.
+                        Камера для макросъемки, 2 Мп. Камера глубины, 2 Мп.</p>
+                        <h4>Аккумулятор и зарядка:</h4>
+                        <p>Аккумулятор 5000 мА·ч. Быстрая зарядка 18 Вт</p>
+                        <h4>Операционная система:</h4>
+                        <p>MIUI 13 для POCO на базе Android 12</p>
+                        <h4>Безопасность:</h4>
+                        <p>Боковой сканер отпечатка пальца.
+                        Разблокировка по лицу на базе ИИ.</p>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <section class="container stolbiki">
+                <ul>Компания:
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#">Наши магазины</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика компании</a>
+                    </li>
+                </ul>
+                <ul>Продукция:
+                    <li>
+                        <a href="#">Смартфоны</a>
+                    </li>
+                    <li>
+                        <a href="#">Планшеты</a>
+                    </li>
+                    <li>
+                        <a href="#">Самокаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Умные часы и браслеты</a>
+                    </li>
+                    <li>
+                        <a href="#">Товары для красоты</a>
+                    </li>
+                </ul>
+                <ul>Покупателям:
+                    <li>
+                        <a href="#">Частые вопросы</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка и оплата</a>
+                    </li>
+                    <li><a href="#">Кредит и рассрочка</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                </ul>
+                <ul>Наши контакты:
+                    <li class="phone">
+                        <a href="#">495-000-00-00</a>
+                    </li>
+                    <li class="pochta">
+                        <a href="#">info@mail.ru</a>
+                    </li>
+                    <li class="social"></li>
+                </ul>
+            </section>
+            <div class="liner"></div>
+            <section class="container copy">Copyright &#169; OKrupinskaya 2022</section>
+        </footer>
+    </body>
+</html>

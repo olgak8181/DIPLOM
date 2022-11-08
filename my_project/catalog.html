@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Каталог</title>
+        
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/slider.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <section class="container">
+                <div class="cont1">
+                    <a class="logo"></a>
+                    <div id="city" class="gorod" title="Если ваш город определен неправильно, нажмите для выбора правильного города">Ваш город: <span>Москва</span></div>
+                    <p>
+                        <a href="#" class="phon">495-000-00-00</a>
+                    </p>
+                </div>
+            </section>
+            <section class="container">
+                <div class="cont2">
+                    
+                    <input class="poisk" type="text" placeholder="Поиск по сайту">
+                    <button class="iskat" type="submit">найти</button>
+                    <a class="user"></a>
+                    <a class="basket"></a>
+                </div>
+            </section>
+            <section class="container">
+                <div class="cont3">
+                    <nav class="topmenu">
+                        <a href="index.html"><span>Главная страница</span></a>
+                        <a href="catalog.html"><span>Каталог</span></a>
+                        <a href="product.html"><span>Товар</span></a>
+                        <a href="order.html"><span>Корзина</span></a>
+                        <a href="contacts.html"><span>Контакты</span></a>
+                    </nav>
+                </div>
+            </section>
+        </header>
+        
+        <main class="catalog">
+            <section class="container">
+                <aside>
+                    
+                    <nav class="catmenu">
+                        <p>Каталог</p>
+                        <ul>
+                            
+                            <li>
+                                <a href="#"><span>Смартфоны</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Mi</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Poco</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Redmi</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Наушники</span></a>
+                            </li>
+                            
+                            <li>
+                                <a href="#"><span>Красота и здоровье</span></a>
+                                
+                                <ul>
+                                    <li>
+                                        <a href="#"><span>Фены</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Електрические зубные щетки</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Напольные весы</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>Планшеты</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Электросамокаты</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Умные часы и браслеты</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- /catmenu -->
+                    <div class="filters">
+                        <p>Фильтры:</p>
+                        <p>
+                            <label for="amount">Цена руб. от</label>
+                            <input type="text" id="amount1">
+                            <label for="amount">до</label>
+                            <input type="text" id="amount2">
+                        </p>   
+                        <div id="slider-range"></div>
+                    </div>
+                    <div class="sortirovka">
+                        <p>Сортировка по цене</p>
+                        <input type="radio"name="radio"><span class="vozrast">По</span><br>
+                        <input type="radio"name="radio"><span class="ubyvan">По</span>
+                    </div>
+                    <div class="pamyat">
+                        <p>Объем встроенной памяти ГБ</p>
+                        <input type="checkbox" name="checkbox1"><span>64</span>
+                        <br>
+                        <input type="checkbox" name="checkbox2"><span>128</span>
+                        <br>
+                        <input type="checkbox" name="checkbox3"><span>256</span>
+                    </div>
+                    
+                    <div class="cvet">
+                        <p>Цвет</p>
+                        <input type="checkbox" name="checkbox1"><span class="red"></span>
+                        <br>
+                        <input type="checkbox" name="checkbox2"><span class="yellow"></span>
+                        <br>
+                        <input type="checkbox" name="checkbox3"><span class="green"></span>
+                    </div>
+                    <div class="sposob">
+                        <p>Способ получения товара</p>
+                        <input type="radio"name="radio"><span>Самовывоз из магазина<br></span>
+                        <input type="radio"name="radio"><span>Доставка до двери</span>
+                    </div>
+               
+                    <button type="button" class="primenit">Применить</button>
+                </aside>
+                
+                
+                
+                <article>
+                    <div class="cat-item pocowatch tovar">
+                        <p>
+                            <a href="#">Умные часы POCO Watch<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>5990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item tpro12 tovar">
+                        <p>
+                            <a href="#">Смартфон Xiaomi 12T Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>50990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item sband7 tovar">
+                        <p>
+                            <a href="#">Умный браслет Smart Band 7 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>6990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item buds tovar">
+                        <p>
+                            <a href="#">Наушники Redmi Buds 3T Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>12990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item sam1s tovar">
+                        <p>
+                            <a href="#">Электросамокат Xiaomi Mi ES 1S <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>33190</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pocom5 tovar">
+                        <p>
+                            <a href="product.html">Смартфон Xiaomi Poco M5 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>14990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item sampro tovar">
+                        <p>
+                            <a href="#">Электросамокат Xiaomi M365 Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>38190</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pad5 tovar">
+                        <p>
+                            <a href="#">Планшет Xiaomi Pad5 <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>32090</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item zub tovar">
+                        <p>
+                            <a href="#">Зубная щетка Xiaomi DR.BEI SE <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>6090</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item fen tovar">
+                        <p>
+                            <a href="#">Фен Xiaomi Mija Hair Dryer H500 <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>4990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item redmipad tovar">
+                        <p>
+                            <a href="#">Планшет Redmi Pad диагональ 10,61' <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>22990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item note10 tovar">
+                        <p>
+                            <a href="#">Смартфон Redmi Note 10 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>17890</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item note11 tovar">
+                        <p>
+                            <a href="#">Смартфон Redmi Note 11 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>32290</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pocof4 tovar">
+                        <p>
+                            <a href="#">Смартфон Xiaomi Poco F4 GT<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>52190</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pocom4 tovar">
+                        <p>
+                            <a href="#">Смартфон Xiaomi Poco M4 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>22590</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item tpro11 tovar">
+                        <p>
+                            <a href="#">Смартфон Xiaomi 11T Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>44990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item x12 tovar">
+                        <p>
+                            <a href="#">Смартфон Xiaomi 12 Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>56990</span>
+                        <button type="button">купить</button>
+                    </div>
+                    
+                    <div class="cat-item ves tovar">
+                        <p>
+                            <a href="#">Весы Xiaomi Mi body Composition Scale2 <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>2790</span>
+                        <button type="button">купить</button>
+                    </div>
+                    
+                </article>
+            </section>
+        </main>
+        
+        <footer>
+            <section class="container stolbiki">
+                <ul>Компания:
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#">Наши магазины</a>
+                    </li>
+                    <li>
+                        <a href="#">Политика компании</a>
+                    </li>
+                </ul>
+                <ul>Продукция:
+                    <li>
+                        <a href="#">Смартфоны</a>
+                    </li>
+                    <li>
+                        <a href="#">Планшеты</a>
+                    </li>
+                    <li>
+                        <a href="#">Самокаты</a>
+                    </li>
+                    <li>
+                        <a href="#">Умные часы и браслеты</a>
+                    </li>
+                    <li>
+                        <a href="#">Товары для красоты</a>
+                    </li>
+                </ul>
+                <ul>Покупателям:
+                    <li>
+                        <a href="#">Частые вопросы</a>
+                    </li>
+                    <li>
+                        <a href="#">Доставка и оплата</a>
+                    </li>
+                    <li><a href="#">Кредит и рассрочка</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                </ul>
+                <ul>Наши контакты:
+                    <li class="phone">
+                        <a href="#">495-000-00-00</a>
+                    </li>
+                    <li class="pochta">
+                        <a href="#">info@mail.ru</a>
+                    </li>
+                    <li class="social"></li>
+                </ul>
+            </section>
+            <div class="liner"></div>
+            <section class="container copy">Copyright &#169; OKrupinskaya 2022</section>
+        </footer>
+    </body>
+</html>
